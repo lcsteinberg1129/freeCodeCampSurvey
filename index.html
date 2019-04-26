@@ -12,59 +12,59 @@
 
 <body>
 
+  <h1 id="title">Survey Form</h1>
+  <div class="container">
+
+    <p id="description">description of the survey</p>
+    <form action="" id="survey-form">
+      <div class="grid">
+        <!--    name   / -->
+        <label for="name" id="name-label">Name:</label>
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+
+        <!--   email     -->
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+
+        <!--    age    -->
+        <label for="age" id="number-label">Age: </label>
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+
+        <!--    drop down    -->
+        <label for="currentPos">Here is a fun drop down!</label>
+        <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option  value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </select>
+
+        <!--    radio buttons    -->
+        <label for="radioButtons">radio buttons:</label>
+        <ul id="radioList">
+          <li><input name="radio-buttons" value="1" type="radio"><label class="radio">First answer</label></li>
+          <li><input name="radio-buttons" value="2" type="radio"><label class="radio">Second answer here!</label></li>
+          <li><input name="radio-buttons" value="3" type="radio"><label class="radio">Here's the third</label></li>
+        </ul>
+
+  <!--   checkboxes     -->
+        <label for="checkboxes">here are the checkboxes:</label>
+        <ul id="listOfCheckboxes">
+           <li><input name="prefer" value="1" type="checkbox" class="userRatings"><label class = "checkbox">Here is the first check</label></li>
+          <li><input name="prefer" value="2" type="checkbox" class="userRatings"><label class = "checkbox">And the second 2</label></li>
+          <li><input name="prefer" value="3" type="checkbox" class="userRatings"><label class = "checkbox">And now the third</label></li>
+          <li><input name="prefer" value="1" type="checkbox" class="userRatings"><label class = "checkbox">The fourth check is here</label></li>
+        </ul>
+
+        <!--   comments   -->
+        <label for="comments">Any Comments or Suggestions?</label>
+        <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+
 </body>
 
 </html>
-
-<h1 id="title">Survey Form</h1>
-<div class="container">
-
-  <p id="description">description of the survey</p>
-  <form action="" id="survey-form">
-    <div class="grid">
-      <!--    name   / -->
-      <label for="name" id="name-label">Name:</label>
-      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-
-      <!--   email     -->
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
-
-      <!--    age    -->
-      <label for="age" id="number-label">Age: </label>
-      <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
-
-      <!--    drop down    -->
-      <label for="currentPos">Here is a fun drop down!</label>
-      <select id="dropdown" name="currentPos" class="dropdown">
-      <option disabled value>Select an option</option>
-      <option  value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-      <option value="option4">Option 4</option>
-    </select>
-
-      <!--    radio buttons    -->
-      <label for="radioButtons">radio buttons:</label>
-      <ul id="radioList">
-        <li><input name="radio-buttons" value="1" type="radio"><label class="radio">First answer</label></li>
-        <li><input name="radio-buttons" value="2" type="radio"><label class="radio">Second answer here!</label></li>
-        <li><input name="radio-buttons" value="3" type="radio"><label class="radio">Here's the third</label></li>
-      </ul>
-
-<!--   checkboxes     -->
-      <label for="checkboxes">here are the checkboxes:</label>
-      <ul id="listOfCheckboxes">
-         <li><input name="prefer" value="1" type="checkbox" class="userRatings"><label class = "checkbox">Here is the first check</label></li>
-        <li><input name="prefer" value="2" type="checkbox" class="userRatings"><label class = "checkbox">And the second 2</label></li>
-        <li><input name="prefer" value="3" type="checkbox" class="userRatings"><label class = "checkbox">And now the third</label></li>
-        <li><input name="prefer" value="1" type="checkbox" class="userRatings"><label class = "checkbox">The fourth check is here</label></li>
-      </ul>
-
-      <!--   comments   -->
-      <label for="comments">Any Comments or Suggestions?</label>
-      <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
-    </div>
-    <button id="submit">Submit</button>
-  </form>
-</div>
